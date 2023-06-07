@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РГР</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <script src="jQuery.js"></script>
+
+</head>
+
+<body>
+<header class="header">
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <div class="logo">
+        <img src="logo.jpg" alt="Логотип" hspace="15px">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" class="text">Головна</a></li>
+            <li><a href="index2.html" class="text">Унівеситети</a></li>
+            <li><a href="index3.html" class="text">Новини</a></li>
+            <li><a href="index4.html" class="text">Контакти</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: url(back.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hh1 {
+        color: #fffefe;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .gallery-item:hover .image-overlay {
+        opacity: 1;
+    }
+
+    .text {
+        font-family: cursive;
+        color: OldLace;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .image-overlay-content h2 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .image-overlay-content p {
+        color: #ccc;
+        font-size: 14px;
+    }
+
+</style>
+<h1>Університети</h1>
+<div class="container">
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="a1.jpg" alt="Зображення 1">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Ві́нницький національний агра́рний університе́т</h2>
+                    <p>надає освітні послуги пов'язані з одержанням вищої освіти на рівні кваліфікаційних вимог до молодшого
+                        спеціаліста, бакалавра, спеціаліста, магістра.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a2.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Волинський національний університе́т і́мені Ле́сі Украї́нки</h2>
+                    <p>державний вищий навчальний заклад IV рівня акредитації у місті Луцьк, Україна. Заснований у 1940
+                        році, впродовж історії змінював назви: Луцький державний учительський інститут, Луцький державний
+                        педагогічний інститут;</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a3.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Дніпровський гуманітарний університет</h2>
+                    <p> є багатогалузевим закладом вищої освіти приватної форми власності, що провадить інноваційну
+                        освітню діяльність за різними ступенями вищої освіти, проводить фундаментальні та прикладні
+                        наукові дослідження, сприяє поширенню наукових знань та веде культурно-просвітницьку діяльність.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a4.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Криворізький державний педагогічний університет</h2>
+                    <p>За роки свого існування виш підготував близько 50 тисяч фахівців для освіти, що працюють у загальноосвітніх
+                        школах, профтехучилищах, позашкільних навчально-виховних закладах та інших навчальних закладах.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a5.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Донецький національний медичний університет</h2>
+                    <p>Наприкінці 1920-х років вищу медичну освіту в Україні було можливо отримати в Києві,
+                        Львові, Одесі, Харкові, Катеринославі (Дніпрі) і Сімферополі.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a6.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Державний університет «Житомирська політехніка»</h2>
+                    <p>Університет було створено на підставі Наказу Міністерства вищої і середньої спеціальної освіти
+                        УРСР від 11.03.1960 р. № 84 і Наказу Київського політехнічного інституту (КПІ) від 24.11.1960 р.
+                        № 194 шляхом створення загальнотехнічного факультету (ЗТФ КПІ).</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a7.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Ужгородський національний університет</h2>
+                    <p>Ужгородський національний університет заснований 18 жовтня 1945 року. Він належить до класичних
+                        університетів України, сертифікованих/затверджених за IV (вищим) рівнем акредитації (ліцензія
+                        Міністерства освіти України серії АГ № 582508)</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a8.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Запорізький державний медичний університет</h2>
+                    <p>Запорізький державний медичний університет — це сучасний навчальний центр, що має вищий (IV) ступінь
+                        акредитації. Університет — один з найстаріших вищих медичних навчальних закладів України.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a9.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Київський національний університет культури і мистецтв</h2>
+                    <p>Станом на 2021 рік заклад нараховує 10 факультетів і готує студентів за 33 спеціалізаціями;
+                        науково-педагогічну діяльність здійснюють понад 140 докторів наук та професорів, понад 230
+                        кандидатів наук, доцентів, понад 50 народних артистів України, понад 60 заслужених артистів
+                        України та заслужених діячів мистецтв України</p>
+                </div>
+            </div>
+        </div>
+       
+</body>
+</html>
